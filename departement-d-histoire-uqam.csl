@@ -15,7 +15,7 @@
     </contributor>
     <category citation-format="note"/>
     <category field="history"/>
-    <updated>2021-02-20T11:25:46+00:00</updated>
+    <updated>2023-09-09T11:25:46+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="fr">
@@ -164,7 +164,7 @@
           <group suffix=",">
             <text variable="title" text-case="capitalize-first" quotes="true"/>
           </group>
-          <text value="dans" font-style="normal" suffix=" " prefix=" "/>
+          <text value="dans" font-style="normal" suffix="" prefix=" "/>
           <text variable="edition" suffix=" (dir.), "/>
           <text variable="container-title" text-case="capitalize-first" font-style="italic" prefix="&#160;"/>
         </group>
@@ -294,7 +294,7 @@
     <choose>
       <if type="chapter" match="any">
         <group delimiter=", " font-style="normal">
-          <text variable="page" suffix="p."/>
+          <text variable="page" prefix="p.&#160;"/>
         </group>
       </if>
     </choose>
@@ -321,7 +321,7 @@
     <choose>
       <if type="article-journal" match="any">
         <group delimiter=", " font-style="normal">
-          <text variable="page" prefix="pp.&#160;"/>
+          <text variable="page" prefix="p.&#160;"/>
         </group>
       </if>
     </choose>
